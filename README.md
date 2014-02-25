@@ -16,7 +16,7 @@ C client dependencies:
     
 Get and install the client:
 
-    $ git clone git@github.com:logintc/logintc-c
+    $ git clone https://github.com/logintc/logintc-c.git
     $ pushd logintc-c
     $ autoreconf -i
     $ CFLAGS=-O3 ./configure --prefix=/usr --disable-static
@@ -30,7 +30,7 @@ PAM dependencies:
 
 Get and build LoginTC PAM:
 
-    $ git clone git@github.com:logintc/logintc-pam
+    $ git clone https://github.com/logintc/logintc-pam.git
     $ pushd logintc-c
     $ autoreconf -i
     $ CFLAGS=-O3 ./configure --libdir=/lib/security --disable-static
