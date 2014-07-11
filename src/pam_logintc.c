@@ -35,10 +35,7 @@ PAM_EXTERN int pam_sm_authenticate(pam_handle_t* pamh, int flags, int argc,
     }
 
     for (i = 0; i < argc; ++i) {
-        if (strncmp(argv[i], _PAM_LOGINTC_BASE_URL,
-                sizeof(_PAM_LOGINTC_BASE_URL) - 1) == 0) {
-            base_url = argv[i] + sizeof(_PAM_LOGINTC_BASE_URL) - 1;
-        } else if (strncmp(argv[i], _PAM_LOGINTC_API_KEY,
+        if (strncmp(argv[i], _PAM_LOGINTC_API_KEY,
                 sizeof(_PAM_LOGINTC_API_KEY) - 1) == 0) {
             api_key = argv[i] + sizeof(_PAM_LOGINTC_API_KEY) - 1;
         } else if (strncmp(argv[i], _PAM_LOGINTC_DOMAIN_ID,
