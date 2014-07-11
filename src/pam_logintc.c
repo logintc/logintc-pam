@@ -4,6 +4,7 @@
 #include <security/pam_modules.h>
 #include <time.h>
 #include <unistd.h>
+#include <stdio.h>
 
 #define _PAM_LOGINTC_API_KEY       "api_key="
 #define _PAM_LOGINTC_DOMAIN_ID     "domain_id="
@@ -87,7 +88,7 @@ PAM_EXTERN int pam_sm_authenticate(pam_handle_t* pamh, int flags, int argc,
 
             logintc_get_session(logintc, domain_id, &session);
 
-            if (session->state == LOGINTC_SESSION_PENDING) {
+            if (session->state != LOGINTC_SESSION_PENDING) {
                 break;
             }
 
