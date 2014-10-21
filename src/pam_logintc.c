@@ -11,10 +11,10 @@
 #define _PAM_LOGINTC_TIMEOUT       "timeout="
 #define _PAM_LOGINTC_POLL_INTERVAL "poll_interval="
 
-double const static _DEFAULT_TIMEOUT = 60;
-unsigned int const static _DEFAULT_POLL_INTERVAL = 1;
-double const static _MIN_TIMEOUT = 0;
-unsigned int const static _MIN_POLL_INTERVAL = 1;
+static double const _DEFAULT_TIMEOUT = 60;
+static unsigned int const _DEFAULT_POLL_INTERVAL = 1;
+static double const _MIN_TIMEOUT = 0;
+static unsigned int const _MIN_POLL_INTERVAL = 1;
 
 PAM_EXTERN int pam_sm_authenticate(pam_handle_t* pamh, int flags, int argc,
         char const** argv) {
