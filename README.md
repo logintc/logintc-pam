@@ -155,7 +155,7 @@ Uninstall C client:
     $ sudo make uninstall
     $ popd
     
-Uninstall LoginTC PAC:
+Uninstall LoginTC PAM:
 
     $ pushd logintc-pam
     $ sudo make uninstall
