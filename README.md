@@ -12,7 +12,7 @@ Installation
 
 C client dependencies:
 
-    sudo yum install git gcc make curl-devel cmake
+    sudo yum install git gcc gcc-c++ make curl-devel cmake
     
 Get and install the client:
 
