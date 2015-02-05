@@ -21,7 +21,7 @@ Get and install the client:
     $ CFLAGS=-O3 cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr .
     $ make
     $ sudo make install
-    $ popd logintc-c
+    $ popd
     
 PAM dependencies:
 
@@ -153,13 +153,13 @@ Uninstall C client:
 
     $ pushd logintc-c
     $ sudo make uninstall
-    $ popd logintc-c
+    $ popd
     
 Uninstall LoginTC PAC:
 
     $ pushd logintc-pam
     $ sudo make uninstall
-    $ popd logintc-pam
+    $ popd
 
 Documentation
 =============
