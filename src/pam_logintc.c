@@ -1,3 +1,4 @@
+#include <logintc/error.h>
 #include <logintc/globals.h>
 #include <logintc/logintc.h>
 #include <logintc/session.h>
