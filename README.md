@@ -104,9 +104,7 @@ This program can be compiled with:
 
     $ gcc -lpam -lpam_misc -o logintctest logintctest.c
 
-Create a logintctest PAM configuration:
-
-    vi /etc/pam.d/logintctest and add the following line to the second line (under #%PAM-1.0):
+Create a logintctest PAM configuration ```/etc/pam.d/logintctest``` with the following contents:
 
     #%PAM-1.0
     auth required pam_logintc.so api_key=[api_key] domain_id=[domain_id]
@@ -137,7 +135,7 @@ LoginTC PAM installs the following files:
     /lib/security/pam_logintc.so.0 (symlink)
     /lib/security/pam_logintc.so.0.0.0 (shared library)
 
-You can also bypass the autotools process and compile the object manually.
+You can also bypass the CMake process and compile the object manually.
 
 For C client:
 
